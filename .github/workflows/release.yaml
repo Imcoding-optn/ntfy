@@ -44,7 +44,7 @@ jobs:
         name: Build and publish
         run: make release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       -
         name: Print build results and checksums
         run: make cli-build-results
